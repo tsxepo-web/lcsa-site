@@ -11,15 +11,15 @@ export function PageHero({
   children: ReactNode;
 }) {
   return (
-    <section className="bg-soft">
+    <section className="bg-navy">
       <div className="mx-auto max-w-6xl px-5 py-16">
         <div className="mb-3 text-xs font-bold uppercase tracking-widest text-brand">
           {eyebrow}
         </div>
-        <h1 className="max-w-3xl text-4xl font-extrabold text-navy md:text-5xl">
+        <h1 className="max-w-3xl text-4xl font-extrabold text-white md:text-5xl">
           {title}
         </h1>
-        <p className="mt-4 max-w-2xl text-lg text-slate-600">{children}</p>
+        <p className="mt-4 max-w-2xl text-lg text-white/70">{children}</p>
       </div>
     </section>
   );
