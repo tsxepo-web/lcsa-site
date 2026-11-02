@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Card, Notice, PageHero, RowList, Section } from "@/components/ui";
+import { PageHero } from "@/components/ui";
 
 const complianceRows: [string, string, string, string][] = [
   [
@@ -94,10 +94,9 @@ export default function Ethics() {
         A Code of Ethics, a complaints route and a disciplinary framework.
       </PageHero>
       <section id="ethics" className="border-y border-slate-200 bg-white">
-        <div className="mx-auto max-w-[1280px] px-4 py-12 md:px-6 md:py-16">
-          {/* Header row */}
+        <div className="mx-auto max-w-7xl px-4 py-12 md:px-6 md:py-16">
           <div className="flex flex-col justify-between gap-6 lg:flex-row">
-            <div className="max-w-[720px]">
+            <div className="max-w-180">
               <div className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#D11C1C]">
                 Statutory Bodies Compliance Schedule
               </div>
@@ -111,8 +110,7 @@ export default function Ethics() {
                 jurisdiction.
               </p>
             </div>
-
-            <div className="h-fit max-w-[360px] rounded-xl bg-[#0A1931] px-4 py-3 text-[12px] leading-relaxed text-white">
+            <div className="h-fit max-w-90 rounded-xl bg-[#0A1931] px-4 py-3 text-[12px] leading-relaxed text-white">
               <strong className="tracking-wide">NO INTERNATIONAL BODIES</strong>
               <br />
               Per user instruction and Interim Constitution, LCSA scope excludes
@@ -120,10 +118,8 @@ export default function Ethics() {
               limited to SAQA/CATHSSETA/QCTO/SA statutory environment.
             </div>
           </div>
-
-          {/* Compliance table */}
-          <div className="mt-8 overflow-x-auto rounded-[12px] border border-slate-200">
-            <table className="w-full min-w-[860px] text-[12.5px]">
+          <div className="mt-8 overflow-x-auto rounded-xl border border-slate-200">
+            <table className="w-full min-w-215 text-[12.5px]">
               <thead>
                 <tr className="bg-[#0A1931] text-left text-white">
                   <th className="px-4 py-3">Statute / Authority</th>
@@ -146,8 +142,6 @@ export default function Ethics() {
               </tbody>
             </table>
           </div>
-
-          {/* Three feature cards */}
           <div className="mt-8 grid gap-4 md:grid-cols-3">
             {ethicsCards.map((f) => (
               <div
