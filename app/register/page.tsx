@@ -30,10 +30,9 @@ const MOCK: LookupResult = {
 };
 
 export default function RegisterSection() {
-  const [n, r] = useState(""); // input value / setter
-  const [l, setLookup] = useState<LookupResult | null>(null); // lookup result
+  const [n, r] = useState("");
+  const [l, setLookup] = useState<LookupResult | null>(null);
 
-  // "s" = verify handler
   const s = () => {
     const q = n.trim();
     if (!q) {
@@ -43,7 +42,6 @@ export default function RegisterSection() {
       });
       return;
     }
-    // mock: any non-empty value returns the sample record
     if (q.toLowerCase().includes("invalid")) {
       setLookup({
         error: true,
@@ -56,8 +54,7 @@ export default function RegisterSection() {
 
   return (
     <section id="register" className="bg-[#0A1931] text-white">
-      <div className="mx-auto grid max-w-[1280px] items-start gap-10 px-4 py-12 md:px-6 md:py-16 lg:grid-cols-[1.1fr_0.9fr]">
-        {/* Left column */}
+      <div className="mx-auto grid max-w-7xl items-start gap-10 px-4 py-12 md:px-6 md:py-16 lg:grid-cols-[1.1fr_0.9fr]">
         <div>
           <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1 text-[11px] font-bold uppercase tracking-widest">
             Professional Register • Verification
@@ -71,8 +68,7 @@ export default function RegisterSection() {
             non-competent lifeguards may constitute negligence. LCSA Register is
             definitive source.
           </p>
-
-          <div className="mt-6 grid max-w-[520px] grid-cols-2 gap-3 text-[12px]">
+          <div className="mt-6 grid max-w-130 grid-cols-2 gap-3 text-[12px]">
             <div className="rounded-xl border border-white/15 bg-white/10 p-4">
               <div className="font-bold">What you can verify</div>
               <div className="mt-1 leading-relaxed text-white/60">
@@ -89,8 +85,6 @@ export default function RegisterSection() {
             </div>
           </div>
         </div>
-
-        {/* Right column — verification card */}
         <div className="rounded-[20px] bg-white p-6 text-[#0A1931] shadow-[0_20px_60px_rgba(0,0,0,0.3)]">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2 text-[14px] font-bold tracking-wide">
@@ -101,7 +95,6 @@ export default function RegisterSection() {
               OFFICIAL
             </span>
           </div>
-
           <div className="mt-5">
             <label className="text-[11px] font-bold uppercase tracking-widest text-slate-500">
               Registration Number or ID
@@ -125,8 +118,6 @@ export default function RegisterSection() {
               mock returns sample record for demo.
             </div>
           </div>
-
-          {/* Success result */}
           {l && !l.error && (
             <div className="mt-6 overflow-hidden rounded-[14px] border border-slate-200">
               <div className="flex items-center justify-between bg-[#0A1931] px-4 py-3 text-white">
@@ -137,7 +128,6 @@ export default function RegisterSection() {
                   {l.status}
                 </span>
               </div>
-
               <div className="grid gap-3 p-4 text-[13px]">
                 <div className="flex gap-3">
                   <div className="grid h-12 w-12 place-items-center rounded-full bg-[#0A1931] font-bold text-white">
@@ -150,7 +140,6 @@ export default function RegisterSection() {
                     </div>
                   </div>
                 </div>
-
                 <div className="grid grid-cols-2 gap-3 pt-2">
                   <div>
                     <div className="text-[11px] font-bold uppercase tracking-widest text-slate-500">
@@ -164,7 +153,6 @@ export default function RegisterSection() {
                     </div>
                     <div className="font-medium">{l.validUntil}</div>
                   </div>
-
                   <div className="col-span-2">
                     <div className="text-[11px] font-bold uppercase tracking-widest text-slate-500">
                       CPD Compliance
@@ -173,7 +161,6 @@ export default function RegisterSection() {
                       {l.cpdStatus}
                     </div>
                   </div>
-
                   <div className="col-span-2">
                     <div className="text-[11px] font-bold uppercase tracking-widest text-slate-500">
                       Current Employer
@@ -181,7 +168,6 @@ export default function RegisterSection() {
                     <div>{l.employer}</div>
                   </div>
                 </div>
-
                 <div className="flex gap-2 pt-2">
                   <button className="h-9 rounded-full bg-[#0A1931] px-4 text-[12px] font-bold text-white">
                     Download Compliance Letter
@@ -193,8 +179,6 @@ export default function RegisterSection() {
               </div>
             </div>
           )}
-
-          {/* Error result */}
           {l?.error && (
             <div className="mt-6 flex gap-2 rounded-xl border border-red-200 bg-red-50 p-4 text-[13px] text-red-800">
               <span className="material-symbols-outlined mt-0.5 shrink-0 text-base">
