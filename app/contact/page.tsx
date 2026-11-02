@@ -12,8 +12,7 @@ const quickLinks = [
 export default function ContactSection() {
   return (
     <section id="contact" className="bg-white">
-      <div className="mx-auto grid max-w-[1280px] gap-10 px-4 py-12 md:px-6 md:py-16 lg:grid-cols-[0.9fr_1.1fr]">
-        {/* Left column */}
+      <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 md:px-6 md:py-16 lg:grid-cols-[0.9fr_1.1fr]">
         <div>
           <div className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#D11C1C]">
             Contact • Virtual Platform
@@ -68,9 +67,7 @@ export default function ContactSection() {
             Portal Login.
           </div>
         </div>
-
-        {/* Right column — quick links */}
-        <div className="rounded-[16px] border border-slate-200 bg-[#F8FAFC] p-6">
+        <div className="rounded-2xl border border-slate-200 bg-[#F8FAFC] p-6">
           <div className="text-[14px] font-bold text-[#0A1931]">
             Quick Links &amp; Compliance
           </div>
@@ -89,7 +86,6 @@ export default function ContactSection() {
               </a>
             ))}
           </div>
-
           <div className="mt-6 text-[11px] leading-relaxed text-slate-500">
             <strong>Legal Compliance:</strong> POPIA Act 4 of 2013, PAIA Act 2
             of 2000, BCEA 75 of 1997, LRA 66 of 1995, COIDA 130 of 1993, NPO Act
