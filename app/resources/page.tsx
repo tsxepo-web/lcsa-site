@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import { Card, Cards, DataTable, PageHero, Section } from "@/components/ui";
-import { stakeholders } from "@/lib/site";
+import { PageHero } from "@/components/ui";
 
 const documents = [
   {
@@ -65,6 +64,18 @@ const documents = [
   },
 ];
 
+const tagIcons: Record<string, string> = {
+  Core: "menu_book",
+  Accreditation: "verified_user",
+  Accreditors: "groups",
+  Form: "edit_document",
+  Policy: "policy",
+  Rules: "gavel",
+  SAQA: "workspace_premium",
+  Ethics: "balance",
+  Legal: "shield",
+};
+
 export const metadata: Metadata = { title: "Resources & Governance" };
 
 export default function Resources() {
@@ -77,6 +88,7 @@ export default function Resources() {
         A dedicated resources area keeps the homepage clean while making the
         council&apos;s supporting documents easy to find.
       </PageHero>
+
       <section id="documents" className="border-b border-slate-200 bg-white">
         <div className="mx-auto max-w-[1280px] px-4 py-12 md:px-6 md:py-16">
           {/* Header */}
@@ -105,7 +117,7 @@ export default function Resources() {
                 <div className="flex items-start justify-between gap-3">
                   <div className="grid h-10 w-10 place-items-center rounded-[10px] bg-[#0A1931] text-white">
                     <span className="material-symbols-outlined text-xl">
-                      description
+                      {tagIcons[f.tag] ?? "description"}
                     </span>
                   </div>
                   <span className="rounded-full border border-slate-200 bg-slate-100 px-2 py-1 text-[10px] font-bold uppercase tracking-widest text-slate-600">
