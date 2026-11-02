@@ -4,9 +4,7 @@ import { footerGroups } from "@/lib/site";
 export default function Footer() {
   return (
     <footer className="bg-[#071225] text-slate-300">
-      {/* Main Footer Grid */}
       <div className="mx-auto grid max-w-6xl gap-10 px-5 pt-12 pb-8 md:grid-cols-[1.4fr_1fr_1fr_1fr] md:gap-8">
-        {/* Column 1: Brand & Info */}
         <div>
           <div className="flex items-center gap-3">
             <div className="grid h-9 w-9 place-items-center rounded-[10px] bg-white text-[#0A1931]">
@@ -39,8 +37,6 @@ export default function Footer() {
             WE PUT PUBLIC SAFETY FIRST
           </div>
         </div>
-
-        {/* Columns 2, 3, 4: Link Groups */}
         {footerGroups.map((g) => (
           <div key={g.title}>
             <h4 className="mb-3 font-bold text-white">{g.title}</h4>
@@ -59,17 +55,14 @@ export default function Footer() {
           </div>
         ))}
       </div>
-
-      {/* Bottom Bar */}
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-6xl flex-col justify-between gap-4 px-5 py-6 text-[11px] text-white/50 md:flex-row md:items-start">
-          <p className="max-w-[850px] leading-relaxed">
+          <p className="max-w-212.5 leading-relaxed">
             © 2026 Lifeguard Council of South Africa. All Rights Reserved.
             Interim Council. Constitution approved 08/09/2026. Virtual Platform.
             POPIA | PAIA | BCEA | LRA | COIDA compliant.
           </p>
 
-          {/* Right side links - aligned perfectly with the left text */}
           <div className="flex shrink-0 gap-4 whitespace-nowrap">
             <span>Built to HPCSA benchmark</span>
             <a
