@@ -13,14 +13,15 @@ export default function ContactSection() {
   return (
     <section id="contact" className="bg-white">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-12 md:px-6 md:py-16 lg:grid-cols-[0.9fr_1.1fr]">
-        <div>
+        {/* Left Column - Now Blue */}
+        <div className="rounded-2xl bg-[#0A1931] p-6 text-white md:p-8">
           <div className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#D11C1C]">
             Contact • Virtual Platform
           </div>
-          <h2 className="mt-2 text-[26px] font-extrabold tracking-tight text-[#0A1931] md:text-[32px]">
+          <h2 className="mt-2 text-[26px] font-extrabold tracking-tight md:text-[32px]">
             Lifeguard Council of South Africa
           </h2>
-          <p className="mt-3 text-[14px] leading-relaxed text-slate-600">
+          <p className="mt-3 text-[14px] leading-relaxed text-white/70">
             Non-profit, non-statutory professional body. Operating virtually
             until permanent secretariat established post SAQA recognition. All
             applications via self-service portal.
@@ -28,45 +29,49 @@ export default function ContactSection() {
 
           <div className="mt-6 space-y-3 text-[13px]">
             <div className="flex gap-3">
-              <span className="material-symbols-outlined mt-0.5 shrink-0 text-base text-[#0A1931]">
+              <span className="material-symbols-outlined mt-0.5 shrink-0 text-base text-white/80">
                 domain
               </span>
               <span>
-                <strong>Registered Address (Virtual):</strong> LCSA Interim
-                Secretariat, c/o CATHSSETA Liaison Office, Johannesburg.
-                Official correspondence via portal only.
+                <strong className="text-white">
+                  Registered Address (Virtual):
+                </strong>{" "}
+                LCSA Interim Secretariat, c/o CATHSSETA Liaison Office,
+                Johannesburg. Official correspondence via portal only.
               </span>
             </div>
 
             <div className="flex gap-3">
-              <span className="material-symbols-outlined mt-0.5 shrink-0 text-base text-[#0A1931]">
+              <span className="material-symbols-outlined mt-0.5 shrink-0 text-base text-white/80">
                 mail
               </span>
               <span>
-                <strong>Email:</strong> info@lifeguardcouncil.org.za •
-                cpd@lifeguardcouncil.org.za • ethics@lifeguardcouncil.org.za •
+                <strong className="text-white">Email:</strong>{" "}
+                info@lifeguardcouncil.org.za • cpd@lifeguardcouncil.org.za •
+                ethics@lifeguardcouncil.org.za •
                 accreditation@lifeguardcouncil.org.za
               </span>
             </div>
 
             <div className="flex gap-3">
-              <span className="material-symbols-outlined mt-0.5 shrink-0 text-base text-[#0A1931]">
+              <span className="material-symbols-outlined mt-0.5 shrink-0 text-base text-white/80">
                 health_and_safety
               </span>
               <span>
-                <strong>Constitution:</strong> Approved 08/09/2026 • Ref
-                LCSA-CON-2026-V1 • NPO Act 71 of 1997 compliant
+                <strong className="text-white">Constitution:</strong> Approved
+                08/09/2026 • Ref LCSA-CON-2026-V1 • NPO Act 71 of 1997 compliant
               </span>
             </div>
           </div>
 
-          <div className="mt-6 rounded-xl border border-slate-200 bg-slate-50 p-4 text-[12px] leading-relaxed text-slate-600">
-            <strong>Office Hours:</strong> Mon-Fri 08:00-16:00 SAST (Virtual).
-            Response time 3 business days. For urgent verification, use
-            Professional Register widget. For CPD evidence upload, use CPD
-            Portal Login.
+          <div className="mt-6 rounded-xl border border-white/15 bg-white/5 p-4 text-[12px] leading-relaxed text-white/60">
+            <strong className="text-white">Office Hours:</strong> Mon-Fri
+            08:00-16:00 SAST (Virtual). Response time 3 business days. For
+            urgent verification, use Professional Register widget. For CPD
+            evidence upload, use CPD Portal Login.
           </div>
         </div>
+
         <div className="rounded-2xl border border-slate-200 bg-[#F8FAFC] p-6">
           <div className="text-[14px] font-bold text-[#0A1931]">
             Quick Links &amp; Compliance
