@@ -49,11 +49,10 @@ export const metadata: Metadata = { title: "CPD Programme" };
 export default function CPD() {
   return (
     <section id="cpd" className="border-y border-slate-200 bg-[#F8FAFC]">
-      <div className="mx-auto max-w-[1280px] px-4 py-12 md:px-6 md:py-20">
-        {/* Header row — blue block */}
-        <div className="rounded-[16px] bg-[#0A1931] p-6 md:p-8">
+      <div className="mx-auto max-w-7xl px-4 py-12 md:px-6 md:py-20">
+        <div className="rounded-2xl bg-[#0A1931] p-6 md:p-8">
           <div className="flex flex-col justify-between gap-6 lg:flex-row lg:items-start">
-            <div className="max-w-[760px]">
+            <div className="max-w-190">
               <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1 text-[11px] font-bold uppercase tracking-widest text-white">
                 <span className="material-symbols-outlined text-sm">
                   workspace_premium
@@ -76,9 +75,7 @@ export default function CPD() {
                 ongoing competence and public safety from drowning.
               </p>
             </div>
-
-            {/* Benchmark card — inside the blue block */}
-            <div className="shrink-0 rounded-[16px] border border-slate-200 bg-white p-4 shadow-sm lg:w-[320px]">
+            <div className="shrink-0 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm lg:w-[320px]">
               <div className="text-[10px] font-bold uppercase tracking-widest text-slate-500">
                 Benchmark Structure
               </div>
@@ -115,8 +112,6 @@ export default function CPD() {
             </div>
           </div>
         </div>
-
-        {/* Revisions card */}
         <div className="mt-10 overflow-hidden rounded-[20px] border border-slate-200 bg-white shadow-sm">
           <div className="flex items-start justify-between gap-4 bg-[#0A1931] px-6 py-5 text-white md:px-8">
             <div>
@@ -158,21 +153,19 @@ export default function CPD() {
             </span>
           </div>
         </div>
-
-        {/* CEU table */}
         <div className="mt-10">
           <h3 className="text-[18px] font-extrabold text-[#0A1931]">
             Minimum CEU Requirements per Designation
           </h3>
-          <p className="mt-2 max-w-[800px] text-[13px] text-slate-600">
+          <p className="mt-2 max-w-200 text-[13px] text-slate-600">
             CEUs: Continuing Education Units. 1 CEU = 1 hour of accredited
             learning. Ethics component must include Human Rights, Health Law,
             OHSA 85 of 1993, and professional conduct. Cycle: 1 March – 28
             February annually.
           </p>
 
-          <div className="mt-5 overflow-x-auto rounded-[12px] border border-slate-200 bg-white shadow-sm">
-            <table className="w-full min-w-[720px] text-[13px]">
+          <div className="mt-5 overflow-x-auto rounded-xl border border-slate-200 bg-white shadow-sm">
+            <table className="w-full min-w-180 text-[13px]">
               <thead>
                 <tr className="bg-[#0A1931] text-left text-white">
                   <th className="px-4 py-3.5 font-bold tracking-wide">
@@ -201,7 +194,7 @@ export default function CPD() {
                     <td className="px-4 py-3.5 font-semibold">{f[2]}</td>
                     <td className="px-4 py-3.5 font-semibold">{f[3]}</td>
                     <td className="px-4 py-3.5">
-                      <span className="inline-flex min-w-[36px] justify-center rounded-full bg-[#0A1931] px-2.5 py-1 text-[12px] font-bold text-white">
+                      <span className="inline-flex min-w-9 justify-center rounded-full bg-[#0A1931] px-2.5 py-1 text-[12px] font-bold text-white">
                         {f[4]}
                       </span>
                     </td>
