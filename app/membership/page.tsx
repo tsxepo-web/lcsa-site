@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Card, Cards, PageHero, Section, btnPrimary } from "@/components/ui";
-import { designations } from "@/lib/site";
+import { PageHero } from "@/components/ui";
 
 const designationRows: [string, string, string, string, string][] = [
   [
@@ -80,7 +79,7 @@ export default function Membership() {
         service.
       </PageHero>
       <section id="membership" className="bg-[#F8FAFC]">
-        <div className="mx-auto max-w-[1280px] px-4 py-12 md:px-6 md:py-16">
+        <div className="mx-auto max-w-7xl px-4 py-12 md:px-6 md:py-16">
           <div className="grid gap-10 lg:grid-cols-2">
             {/* Left column */}
             <div className="flex flex-col">
@@ -91,8 +90,8 @@ export default function Membership() {
                 Professional Designation Requirements
               </h2>
 
-              <div className="mt-5 overflow-x-auto rounded-[12px] border border-slate-200 bg-white">
-                <table className="w-full min-w-[680px] text-[12.5px]">
+              <div className="mt-5 overflow-x-auto rounded-xl border border-slate-200 bg-white">
+                <table className="w-full min-w-170 text-[12.5px]">
                   <thead>
                     <tr className="bg-[#0A1931] text-left text-white">
                       <th className="px-3 py-3">Grade</th>
@@ -117,7 +116,6 @@ export default function Membership() {
                   </tbody>
                 </table>
               </div>
-
               <div className="mt-3 text-[11px] text-slate-500">
                 All candidates must be medically fit, no criminal record
                 involving negligence causing bodily harm, and sign Code of
@@ -125,8 +123,6 @@ export default function Membership() {
                 Constitution.
               </div>
             </div>
-
-            {/* Right column */}
             <div className="flex flex-col space-y-8">
               <div>
                 <h3 className="text-[18px] font-extrabold text-[#0A1931]">
@@ -165,7 +161,6 @@ export default function Membership() {
                       ))}
                     </tbody>
                   </table>
-
                   <div className="flex gap-2 border-t border-amber-200 bg-amber-50 px-4 py-3 text-[11px] text-amber-900">
                     <span className="material-symbols-outlined shrink-0 text-base">
                       info
