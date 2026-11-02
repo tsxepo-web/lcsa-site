@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { PageHero } from "@/components/ui";
 
 const documents = [
   {
@@ -82,8 +81,8 @@ export default function Resources() {
   return (
     <>
       <section className="border-b border-slate-200 bg-[#0A1931] text-white">
-        <div className="mx-auto max-w-[1280px] px-4 py-12 md:px-6 md:py-16">
-          <div className="max-w-[760px]">
+        <div className="mx-auto max-w-7xl px-4 py-12 md:px-6 md:py-16">
+          <div className="max-w-190">
             <div className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#D11C1C]">
               Documents & Resources
             </div>
@@ -96,7 +95,6 @@ export default function Resources() {
               in South Africa, it lives here.
             </p>
           </div>
-
           <div className="mt-8 grid grid-cols-2 gap-3 md:grid-cols-4">
             {[
               {
@@ -126,10 +124,8 @@ export default function Resources() {
           </div>
         </div>
       </section>
-
       <section id="documents" className="border-b border-slate-200 bg-white">
-        <div className="mx-auto max-w-[1280px] px-4 py-12 md:px-6 md:py-16">
-          {/* Header */}
+        <div className="mx-auto max-w-7xl px-4 py-12 md:px-6 md:py-16">
           <div className="flex items-baseline justify-between gap-4">
             <div>
               <div className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#D11C1C]">
@@ -138,14 +134,12 @@ export default function Resources() {
               <h2 className="mt-2 text-[26px] font-extrabold tracking-tight text-[#0A1931] md:text-[32px]">
                 CPD &amp; Professional Practice Library
               </h2>
-              <p className="mt-2 max-w-[720px] text-[13px] text-slate-600">
+              <p className="mt-2 max-w-180 text-[13px] text-slate-600">
                 Modeled on HPCSA CPD document categories. All downloads are
                 POPIA-compliant PDFs. Last updated: September 2026.
               </p>
             </div>
           </div>
-
-          {/* Document cards */}
           <div className="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {documents.map((f) => (
               <div
@@ -162,7 +156,6 @@ export default function Resources() {
                     {f.tag}
                   </span>
                 </div>
-
                 <div className="mt-4 text-[14px] font-bold leading-tight text-[#0A1931] group-hover:text-black">
                   {f.title}
                 </div>
