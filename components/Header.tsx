@@ -45,7 +45,7 @@ export default function Header() {
         <div className="flex items-center gap-2">
           <Link
             href="/register"
-            className="rounded-md bg-navy px-4 py-2 text-sm font-semibold text-white hover:bg-navy/90"
+            className="inline-flex items-center justify-center rounded-md bg-navy px-4 py-2 text-center text-sm font-semibold text-white hover:bg-navy/90"
           >
             Verify Lifeguard
           </Link>
