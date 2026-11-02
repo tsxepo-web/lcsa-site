@@ -1,12 +1,12 @@
 export const nav = [
   { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
   { href: "/register", label: "Professional Register" },
   { href: "/cpd", label: "CPD" },
   { href: "/accreditation", label: "Accreditation" },
   { href: "/membership", label: "Membership" },
   { href: "/ethics", label: "Ethics" },
   { href: "/resources", label: "Resources" },
+  { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
 ];
 

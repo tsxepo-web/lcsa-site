@@ -1,4 +1,3 @@
-// TopBar.tsx — place this ABOVE <Header /> in your layout
 export default function TopBar() {
   return (
     <div className="bg-navy text-white">

@@ -81,13 +81,51 @@ export const metadata: Metadata = { title: "Resources & Governance" };
 export default function Resources() {
   return (
     <>
-      <PageHero
-        eyebrow="Documents & Resources"
-        title="Policies, legislation and professional guidance."
-      >
-        A dedicated resources area keeps the homepage clean while making the
-        council&apos;s supporting documents easy to find.
-      </PageHero>
+      <section className="border-b border-slate-200 bg-[#0A1931] text-white">
+        <div className="mx-auto max-w-[1280px] px-4 py-12 md:px-6 md:py-16">
+          <div className="max-w-[760px]">
+            <div className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#D11C1C]">
+              Documents & Resources
+            </div>
+            <h1 className="mt-3 text-[30px] font-extrabold leading-[1.05] tracking-tight md:text-[42px]">
+              Everything the council publishes, in one place.
+            </h1>
+            <p className="mt-4 text-[14px] leading-relaxed text-white/70 md:text-[15px]">
+              Policies, legislation, forms and professional guidance —
+              versioned, dated and POPIA-compliant. If it governs lifeguarding
+              in South Africa, it lives here.
+            </p>
+          </div>
+
+          <div className="mt-8 grid grid-cols-2 gap-3 md:grid-cols-4">
+            {[
+              {
+                label: "CPD guidelines",
+                icon: "menu_book",
+                href: "#documents",
+              },
+              { label: "Forms", icon: "edit_document", href: "#documents" },
+              {
+                label: "Ethics & conduct",
+                icon: "balance",
+                href: "#documents",
+              },
+              { label: "Legal & POPIA", icon: "shield", href: "#documents" },
+            ].map((j) => (
+              <a
+                key={j.label}
+                href={j.href}
+                className="flex items-center gap-2 rounded-xl border border-white/15 bg-white/10 px-4 py-3 text-[13px] font-semibold transition hover:bg-white/15"
+              >
+                <span className="material-symbols-outlined text-lg">
+                  {j.icon}
+                </span>
+                {j.label}
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
 
       <section id="documents" className="border-b border-slate-200 bg-white">
         <div className="mx-auto max-w-[1280px] px-4 py-12 md:px-6 md:py-16">
