@@ -30,7 +30,7 @@ const complianceRows: [string, string, string, string][] = [
     "SAQA",
     "NQF Act 67 of 2008",
     "Professional Body recognition, designation registration on NQF, RPL",
-    "Professional designations FLCSA etc. registered, CPD aligned to SAQA policy",
+    "Professional designations LPSA etc. registered, CPD aligned to SAQA policy",
   ],
   [
     "Dept of Health & HPCSA",
@@ -67,7 +67,7 @@ const complianceRows: [string, string, string, string][] = [
 const ethicsCards = [
   {
     title: "Ethics & Discipline",
-    desc: "Code of Ethics LCSA-ETH-2026. Complaints via ethics@lifeguardcouncil.org.za. Sanctions: caution, fine, suspension, de-registration. Appeal to independent tribunal per clause 15.",
+    desc: "Code of Ethics LPSA-ETH-2026. Complaints via ethics@lifeguardcouncil.org.za. Sanctions: caution, fine, suspension, de-registration. Appeal to independent tribunal per clause 15.",
     icon: "gavel",
   },
   {
@@ -77,7 +77,7 @@ const ethicsCards = [
   },
   {
     title: "Accreditation Framework",
-    desc: "Two-tier: Accreditors (recognised by LCSA Board) accredit Service Providers. Providers submit attendance directly. Accreditor copied + letter attached.",
+    desc: "Two-tier: Accreditors (recognised by LPSA Board) accredit Service Providers. Providers submit attendance directly. Accreditor copied + letter attached.",
     icon: "verified_user",
   },
 ];
@@ -104,16 +104,16 @@ export default function Ethics() {
                 Multi-Regulator Alignment Framework
               </h2>
               <p className="mt-3 text-[13px] leading-relaxed text-slate-600">
-                LCSA operates as non-statutory body but ensures professional
+                LPSA operates as non-statutory body but ensures professional
                 practice complies with all relevant South African legislation.
-                LCSA does NOT include international bodies. Scope limited to SA
+                LPSA does NOT include international bodies. Scope limited to SA
                 jurisdiction.
               </p>
             </div>
             <div className="h-fit max-w-90 rounded-xl bg-[#0A1931] px-4 py-3 text-[12px] leading-relaxed text-white">
               <strong className="tracking-wide">NO INTERNATIONAL BODIES</strong>
               <br />
-              Per user instruction and Interim Constitution, LCSA scope excludes
+              Per user instruction and Interim Constitution, LPSA scope excludes
               ILS, RLSS Commonwealth, or other international bodies. Recognition
               limited to SAQA/CATHSSETA/QCTO/SA statutory environment.
             </div>
@@ -124,7 +124,7 @@ export default function Ethics() {
                 <tr className="bg-[#0A1931] text-left text-white">
                   <th className="px-4 py-3">Statute / Authority</th>
                   <th className="px-4 py-3">Act No.</th>
-                  <th className="px-4 py-3">LCSA Relevance</th>
+                  <th className="px-4 py-3">LPSA Relevance</th>
                   <th className="px-4 py-3">Compliance Evidence</th>
                 </tr>
               </thead>

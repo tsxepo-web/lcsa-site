@@ -3,12 +3,12 @@ import type { Metadata } from "next";
 const documents = [
   {
     title: "CPD Guidelines for Practitioners",
-    meta: "LCSA-CPD-PRAC-2026 • 24 pages • PDF",
+    meta: "LPSA-CPD-PRAC-2026 • 24 pages • PDF",
     tag: "Core",
   },
   {
     title: "CPD Guidelines for Accreditors and Service Providers",
-    meta: "LCSA-CPD-ACC-2026 • 32 pages • PDF",
+    meta: "LPSA-CPD-ACC-2026 • 32 pages • PDF",
     tag: "Accreditation",
   },
   {
@@ -18,27 +18,27 @@ const documents = [
   },
   {
     title: "Application for CPD Service Provider",
-    meta: "Form LCSA-CPD-01 • Online + PDF",
+    meta: "Form LPSA-CPD-01 • Online + PDF",
     tag: "Form",
   },
   {
     title: "Annual Report by CPD Provider",
-    meta: "Form LCSA-CPD-02 • Due 31 March",
+    meta: "Form LPSA-CPD-02 • Due 31 March",
     tag: "Form",
   },
   {
     title: "Application for Individual CPD Activity",
-    meta: "Form LCSA-CPD-03 • 14-day review",
+    meta: "Form LPSA-CPD-03 • 14-day review",
     tag: "Form",
   },
   {
     title: "Application for Recognition as Accreditor",
-    meta: "Form LCSA-CPD-04 • Board review",
+    meta: "Form LPSA-CPD-04 • Board review",
     tag: "Form",
   },
   {
     title: "Policy: Fees and Commercial Interest for CPD",
-    meta: "LCSA-POL-FEE-2026 • Fee schedule inside",
+    meta: "LPSA-POL-FEE-2026 • Fee schedule inside",
     tag: "Policy",
   },
   {
@@ -53,7 +53,7 @@ const documents = [
   },
   {
     title: "Code of Ethics and Professional Conduct",
-    meta: "LCSA-ETH-2026 • All designations",
+    meta: "LPSA-ETH-2026 • All designations",
     tag: "Ethics",
   },
   {

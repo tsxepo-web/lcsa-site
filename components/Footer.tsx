@@ -14,20 +14,20 @@ export default function Footer() {
             </div>
             <div>
               <div className="font-extrabold leading-none tracking-tight text-white">
-                Lifeguard Council of South Africa
+                Lifeguard Profession of South Africa
               </div>
               <div className="mt-1 text-[10px] uppercase tracking-[0.2em] opacity-70">
-                LCSA • Non-Statutory Professional Body
+                LPSA • Non-Statutory Professional Body
               </div>
             </div>
           </div>
 
           <p className="mt-4 text-[12px] leading-relaxed text-white/60">
-            LCSA is a non-profit, non-statutory professional body established
+            LPSA is a non-profit, non-statutory professional body established
             under NPO Act 71 of 1997, aligned to NQF Act 67 of 2008 and SAQA
             Policy for Professional Bodies. We establish and maintain a national
             professional register for lifeguards to protect public safety from
-            drowning. Interim Constitution Ref LCSA-CON-2026-V1 approved
+            drowning. Interim Constitution Ref LPSA-CON-2026-V1 approved
             08/09/2026. No SAQA Recognition Status yet (interim). Virtual
             platform operation.
           </p>
@@ -58,7 +58,7 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-6xl flex-col justify-between gap-4 px-5 py-6 text-[11px] text-white/50 md:flex-row md:items-start">
           <p className="max-w-212.5 leading-relaxed">
-            © 2026 Lifeguard Council of South Africa. All Rights Reserved.
+            © 2026 Lifeguard Profession of South Africa. All Rights Reserved.
             Interim Council. Constitution approved 08/09/2026. Virtual Platform.
             POPIA | PAIA | BCEA | LRA | COIDA compliant.
           </p>

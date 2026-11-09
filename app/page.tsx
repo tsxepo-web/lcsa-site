@@ -19,7 +19,7 @@ export default function Home() {
               Non-statutory professional body • NPO Act 71 of 1997
             </div>
             <h1 className="text-4xl font-extrabold md:text-6xl">
-              Lifeguard Council of South Africa
+              Lifeguard Profession of South Africa
             </h1>
             <p className="mt-5 max-w-xl text-lg text-slate-300">
               The national professional register for lifeguards. Established to
@@ -48,7 +48,7 @@ export default function Home() {
             </h3>
             <p className="mt-2 text-sm">
               Check registration, designation, CPD compliance and status through
-              the LCSA professional register.
+              the LPSA professional register.
             </p>
             <Link
               href="/register"
@@ -66,19 +66,19 @@ export default function Home() {
       <Section>
         <div className="mb-10 max-w-3xl">
           <div className="mb-2 text-xs font-bold uppercase tracking-widest text-brand">
-            What LCSA does
+            What LPSA does
           </div>
           <h2 className="text-3xl font-extrabold text-navy">
             Professional standards for safer water environments.
           </h2>
           <p className="mt-3 text-lg text-slate-600">
-            LCSA has five functional areas: Professional Standards, Ethics &amp;
+            LPSA has five functional areas: Professional Standards, Ethics &amp;
             Discipline, Scope of Practice, Accreditation, and Health &amp;
             Fitness. CPD sits across all five.
           </p>
         </div>
         <Cards>
-          <Card href="/about" tag="01" title="About LCSA">
+          <Card href="/about" tag="01" title="About LPSA">
             Learn about the Interim Council, its purpose and professional
             framework.
           </Card>
@@ -101,7 +101,7 @@ export default function Home() {
               Put public safety first.
             </h2>
             <p className="mt-3 text-lg text-slate-600">
-              LCSA&apos;s register is the definitive source for verifying a
+              LPSA&apos;s register is the definitive source for verifying a
               lifeguard&apos;s professional status.
             </p>
             <Link href="/register" className={`${btnDark} mt-5`}>

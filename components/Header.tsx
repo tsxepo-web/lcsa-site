@@ -17,9 +17,9 @@ export default function Header() {
             SA
           </span>
           <span className="leading-tight">
-            <b className="block text-navy">LCSA</b>
+            <b className="block text-navy">LPSA</b>
             <small className="text-xs text-slate-500">
-              Lifeguard Council · South Africa
+              Lifeguard Profession · South Africa
             </small>
           </span>
         </Link>

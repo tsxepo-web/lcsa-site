@@ -1,28 +1,28 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/ui";
 
-export const metadata: Metadata = { title: "About LCSA" };
+export const metadata: Metadata = { title: "About LPSA" };
 
 const features = [
   {
     title: "Professional Standards",
     desc: "National competency framework, fitness & medical standards, assessment protocols per designation.",
-    icon: "workspace_premium", // Shield icon
+    icon: "workspace_premium",
   },
   {
     title: "Public Safety Mandate",
     desc: "Protecting bathers, enforcing supervision ratios, OHSA 85 of 1993 compliance for employers.",
-    icon: "shield", // Health and safety icon
+    icon: "shield",
   },
   {
     title: "SAQA Alignment",
     desc: "Professional designations registered on NQF, recognition of prior learning, CATHSSETA & QCTO pathways.",
-    icon: "check_circle", // Education/qualification icon
+    icon: "check_circle",
   },
   {
     title: "Statutory Collaboration",
     desc: "Works with SAMSA, NSRI, SAPS, NDMC, Municipalities, DSAC & SASCOC, Dept Health.",
-    icon: "group", // Collaboration icon
+    icon: "group",
   },
 ];
 
@@ -30,10 +30,10 @@ export default function About() {
   return (
     <>
       <PageHero
-        eyebrow="About LCSA • LCSA-CON-2026-V1"
+        eyebrow="About LPSA • LPSA-CON-2026-V1"
         title="A national professional register for lifeguards."
       >
-        LCSA is a non-profit, non-statutory professional body established to
+        LPSA is a non-profit, non-statutory professional body established to
         reduce drowning risk and professionalise lifeguarding across South
         Africa.
       </PageHero>
@@ -50,7 +50,7 @@ export default function About() {
               <p className="mt-4 text-[14px] leading-relaxed text-slate-600">
                 Interim Council constituted 08/09/2026 under NPO Act 71 of 1997,
                 aligned to NQF Act 67 of 2008 and SAQA Policy for Professional
-                Bodies. LCSA exists to reduce drowning risk and professionalise
+                Bodies. LPSA exists to reduce drowning risk and professionalise
                 lifeguarding across South Africa.
               </p>
 
@@ -72,7 +72,6 @@ export default function About() {
                   key={f.title}
                   className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm"
                 >
-                  {/* Use Google font icon */}
                   <span className="material-symbols-outlined text-2xl text-[#0A1931]">
                     {f.icon}
                   </span>

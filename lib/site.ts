@@ -30,7 +30,7 @@ export const footerGroups = [
   {
     title: "Organisation",
     links: [
-      { href: "/about", label: "About LCSA" },
+      { href: "/about", label: "About LPSA" },
       { href: "/resources", label: "Governance" },
       { href: "/contact", label: "Contact" },
     ],

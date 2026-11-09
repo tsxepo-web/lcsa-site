@@ -9,17 +9,17 @@ const revisions = [
   {
     n: 2,
     title: "Online self-service platform",
-    desc: "LCSA CPD Portal launched for uploading evidence, tracking CEUs, downloading compliance letters. Mobile-responsive, POPIA compliant.",
+    desc: "LPSA CPD Portal launched for uploading evidence, tracking CEUs, downloading compliance letters. Mobile-responsive, POPIA compliant.",
   },
   {
     n: 3,
     title: "Direct provider submissions",
-    desc: "Accredited Service Providers submit attendance registers directly to LCSA via provider portal. No practitioner upload required for provider-led activities.",
+    desc: "Accredited Service Providers submit attendance registers directly to LPSA via provider portal. No practitioner upload required for provider-led activities.",
   },
   {
     n: 4,
     title: "Accreditation letter requirement",
-    desc: "Service Provider must copy Accreditor when submitting to LCSA and must attach accreditation letter. Activities without valid accreditation letter will be rejected.",
+    desc: "Service Provider must copy Accreditor when submitting to LPSA and must attach accreditation letter. Activities without valid accreditation letter will be rejected.",
   },
   {
     n: 5,
@@ -65,13 +65,14 @@ export default function CPD() {
               <p className="mt-4 text-[14px] leading-relaxed text-white/70 md:text-[15px]">
                 CPD is one of{" "}
                 <strong className="text-white">5 functional areas</strong> of
-                the Lifeguard Council of South Africa: Professional Standards,
-                Ethics, Scope of Practice, Accreditation, and Health &amp;
-                Fitness. CPD is implemented under the legislative authority of
-                the <strong className="text-white">NPO Act 71 of 1997</strong>{" "}
-                and <strong className="text-white">NQF Act 67 of 2008</strong>,
-                in accordance with the SAQA Policy for Professional Bodies, and
-                is the responsibility of every registered lifeguard to ensure
+                the Lifeguard Profession of South Africa: Professional
+                Standards, Ethics, Scope of Practice, Accreditation, and Health
+                &amp; Fitness. CPD is implemented under the legislative
+                authority of the{" "}
+                <strong className="text-white">NPO Act 71 of 1997</strong> and{" "}
+                <strong className="text-white">NQF Act 67 of 2008</strong>, in
+                accordance with the SAQA Policy for Professional Bodies, and is
+                the responsibility of every registered lifeguard to ensure
                 ongoing competence and public safety from drowning.
               </p>
             </div>
@@ -90,7 +91,7 @@ export default function CPD() {
                 </a>
               </div>
               <div className="mt-2 text-[12px] leading-relaxed text-slate-600">
-                LCSA CPD pages are modeled exactly on the HPCSA CPD framework
+                LPSA CPD pages are modeled exactly on the HPCSA CPD framework
                 for statutory credibility and user familiarity.
               </div>
               <a
@@ -106,7 +107,7 @@ export default function CPD() {
               </a>
               <div className="mt-3 flex items-center gap-2 border-t border-slate-100 pt-3 text-[11px] text-slate-500">
                 <span className="material-symbols-outlined text-sm">info</span>
-                Benchmark reference only – LCSA is independent non-statutory
+                Benchmark reference only – LPSA is independent non-statutory
                 body.
               </div>
             </div>
@@ -116,7 +117,7 @@ export default function CPD() {
           <div className="flex items-start justify-between gap-4 bg-[#0A1931] px-6 py-5 text-white md:px-8">
             <div>
               <div className="text-[12px] font-bold uppercase tracking-widest opacity-80">
-                Revised CPD Guidelines 2026 • LCSA-CPD-2026-V1
+                Revised CPD Guidelines 2026 • LPSA-CPD-2026-V1
               </div>
               <div className="mt-1 text-[18px] font-bold tracking-tight md:text-[20px]">
                 Key Revisions to CPD Implementation

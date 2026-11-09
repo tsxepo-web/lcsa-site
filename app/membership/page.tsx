@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { PageHero } from "@/components/ui";
 
 const designationRows: [string, string, string, string, string][] = [
@@ -75,13 +74,12 @@ export default function Membership() {
         eyebrow="Membership & Registration"
         title="Professional registration and designations."
       >
-        Eight professional designations, with registration as a central LCSA
+        Eight professional designations, with registration as a central LPSA
         service.
       </PageHero>
       <section id="membership" className="bg-[#F8FAFC]">
         <div className="mx-auto max-w-7xl px-4 py-12 md:px-6 md:py-16">
           <div className="grid gap-10 lg:grid-cols-2">
-            {/* Left column */}
             <div className="flex flex-col">
               <div className="text-[11px] font-bold uppercase tracking-[0.2em] text-[#D11C1C]">
                 Membership Criteria • Constitution Page 11

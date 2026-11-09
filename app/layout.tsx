@@ -9,7 +9,7 @@ import InterimBanner from "@/components/InterimBanner";
 export const metadata: Metadata = {
   title: {
     default: "Lifeguard Council of South Africa",
-    template: "%s | Lifeguard Council of South Africa",
+    template: "%s | Lifeguard Profession of South Africa",
   },
   description:
     "The national professional register for lifeguards. Professional standards, ethics, scope of practice, accreditation and CPD.",

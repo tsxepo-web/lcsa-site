@@ -65,7 +65,7 @@ export default function RegisterSection() {
           <p className="mt-4 max-w-[56ch] text-[14px] leading-relaxed text-white/70">
             Employers, municipalities and event organisers must verify
             registration before deployment. Under OHSA 85 of 1993, employing
-            non-competent lifeguards may constitute negligence. LCSA Register is
+            non-competent lifeguards may constitute negligence. LPSA Register is
             definitive source.
           </p>
           <div className="mt-6 grid max-w-130 grid-cols-2 gap-3 text-[12px]">
@@ -103,7 +103,7 @@ export default function RegisterSection() {
               <input
                 value={n}
                 onChange={(e) => r(e.target.value)}
-                placeholder="LCSA-XXXX-YYYY-NNNN"
+                placeholder="LPSA-XXXX-YYYY-NNNN"
                 className="h-11 flex-1 rounded-full border border-slate-300 px-4 text-[14px] focus:outline-none focus:ring-2 focus:ring-[#0A1931]/20"
               />
               <button
@@ -114,7 +114,7 @@ export default function RegisterSection() {
               </button>
             </div>
             <div className="mt-3 text-[11px] text-slate-500">
-              Example: LCSA-SURF-2026-0847 (Thabo N Molefe). Try any value –
+              Example: LPSA-SURF-2026-0847 (Thabo N Molefe). Try any value –
               mock returns sample record for demo.
             </div>
           </div>

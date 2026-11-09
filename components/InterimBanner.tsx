@@ -19,7 +19,7 @@ export default function InterimBanner() {
         <span className="font-medium text-[#78350F]">
           INTERIM STATUS: Non-Statutory Professional Body established under NPO
           Act 71 of 1997. Application for SAQA Professional Body recognition in
-          progress. Constitution Ref: LCSA-CON-2026-V1 approved 08/09/2026.{" "}
+          progress. Constitution Ref: LPSA-CON-2026-V1 approved 08/09/2026.{" "}
           <span className="hidden md:inline">
             | No SAQA Recognition Status yet - Interim Council operating under
             Interim Constitution.

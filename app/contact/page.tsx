@@ -19,7 +19,7 @@ export default function ContactSection() {
             Contact • Virtual Platform
           </div>
           <h2 className="mt-2 text-[26px] font-extrabold tracking-tight md:text-[32px]">
-            Lifeguard Council of South Africa
+            Lifeguard Profession of South Africa
           </h2>
           <p className="mt-3 text-[14px] leading-relaxed text-white/70">
             Non-profit, non-statutory professional body. Operating virtually
@@ -36,7 +36,7 @@ export default function ContactSection() {
                 <strong className="text-white">
                   Registered Address (Virtual):
                 </strong>{" "}
-                LCSA Interim Secretariat, c/o CATHSSETA Liaison Office,
+                LPSA Interim Secretariat, c/o CATHSSETA Liaison Office,
                 Johannesburg. Official correspondence via portal only.
               </span>
             </div>
@@ -59,7 +59,7 @@ export default function ContactSection() {
               </span>
               <span>
                 <strong className="text-white">Constitution:</strong> Approved
-                08/09/2026 • Ref LCSA-CON-2026-V1 • NPO Act 71 of 1997 compliant
+                08/09/2026 • Ref LPSA-CON-2026-V1 • NPO Act 71 of 1997 compliant
               </span>
             </div>
           </div>

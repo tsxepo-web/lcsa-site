@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Card, PageHero, RowList, Section } from "@/components/ui";
+import { PageHero, Section } from "@/components/ui";
 
 export const metadata: Metadata = { title: "Accreditation" };
 
