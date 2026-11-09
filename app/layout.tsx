@@ -8,7 +8,7 @@ import InterimBanner from "@/components/InterimBanner";
 
 export const metadata: Metadata = {
   title: {
-    default: "Lifeguard Council of South Africa",
+    default: "Lifeguard Profession of South Africa",
     template: "%s | Lifeguard Profession of South Africa",
   },
   description:
