@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { nav } from "@/lib/site";
@@ -12,17 +13,26 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-line bg-white">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3">
+        {/* Logo & Branding */}
         <Link href="/" className="flex items-center gap-3">
-          <span className="grid h-10 w-10 place-items-center rounded-md bg-navy text-sm font-bold text-white">
-            SA
-          </span>
+          <div className="relative h-12 w-12 shrink-0">
+            <Image
+              src="/images/lpsa-logo.png" // Ensure this matches your actual file path
+              alt="Lifeguard Profession of South Africa Logo"
+              fill
+              className="object-contain"
+              priority // Prevents layout shift on load
+            />
+          </div>
           <span className="leading-tight">
-            <b className="block text-navy">LCSA</b>
-            <small className="text-xs text-slate-500">
-              Lifeguard Council · South Africa
+            <b className="block text-[15px] text-navy">LPSA</b>
+            <small className="text-[11px] text-slate-500">
+              Lifeguard Profession · South Africa
             </small>
           </span>
         </Link>
+
+        {/* Desktop Nav */}
         <nav className="hidden items-center gap-1 xl:flex">
           {nav.map((n) => {
             const active =
@@ -72,6 +82,8 @@ export default function Header() {
             );
           })}
         </nav>
+
+        {/* Mobile Menu Button */}
         <div className="flex items-center gap-2">
           <button
             aria-label="Toggle menu"
@@ -82,6 +94,8 @@ export default function Header() {
           </button>
         </div>
       </div>
+
+      {/* Mobile Nav */}
       {open && (
         <nav className="border-t border-line bg-white px-5 py-3 xl:hidden">
           {nav.map((n) => (
