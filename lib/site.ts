@@ -46,7 +46,7 @@ export const nav = [
     href: "/resources",
     label: "Resources",
     children: [
-      { href: "/resources", label: "Endorsed training programmes" },
+      { href: "/resources/endorsed", label: "Endorsed training programmes" },
       {
         href: "/resources/future-proof",
         label: "Future Proof your Career 2026",
@@ -56,8 +56,11 @@ export const nav = [
         href: "/resources/portal-instructions",
         label: "LPSA Online Portal Instructions",
       },
-      { href: "/resources/recertification", label: "Recertification Handbook" },
-      { href: "/resources/webinars", label: "Webinar Replays" },
+      {
+        href: "/resources/recertification-handbook",
+        label: "Recertification Handbook",
+      },
+      { href: "/resources/webinar-replays", label: "Webinar Replays" },
     ],
   },
   { href: "/Member Voices", label: "Member Voices" },
