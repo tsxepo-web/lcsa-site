@@ -2,7 +2,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { Card, Cards, Section, btnDark } from "@/components/ui";
 
-// Replace these with your actual image paths (e.g., "/images/membership.jpg")
 const heroCards = [
   {
     title: "Membership",

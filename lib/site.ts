@@ -17,8 +17,11 @@ export const nav = [
     href: "/designations",
     label: "Designations",
     children: [
-      { href: "/designations", label: "Professional Designations" },
-      { href: "/cpd", label: "Masterclass 2026" },
+      {
+        href: "/designations",
+        label: "Professional Designations",
+      },
+      { href: "/designations/masterclasses", label: "Masterclass 2026" },
     ],
   },
   {
