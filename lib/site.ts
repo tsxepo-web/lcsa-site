@@ -10,9 +10,11 @@ export const nav = [
       {
         href: "/files/lifeguard-manual.pdf",
         label: "Code of Conduct",
-        isExternal: true,
       },
-      { href: "/about/constitution", label: "Constitution" },
+      {
+        href: "/files/constitution-sa.pdf",
+        label: "Constitution",
+      },
       { href: "/about/saqa-recognition", label: "SAQA Recognition" },
       { href: "/about/popia", label: "Protection of Personal Information" },
     ],
