@@ -51,7 +51,7 @@ export default function Directors() {
         <div className="my-10 border-t border-slate-300" />
 
         {/* Bios Section */}
-        <div className="space-y-6 text-[13.5px] leading-relaxed text-slate-700">
+        <div className="mt-12 space-y-6 text-[13.5px] leading-relaxed text-slate-700">
           <p>
             <strong className="font-semibold text-slate-900">
               Tholo Motaung (M. Inst. D)
@@ -68,7 +68,7 @@ export default function Directors() {
             Institute of Directors South Africa (IODSA).
           </p>
 
-          <p>
+          <p className="mt-12">
             <strong className="font-semibold text-slate-900">
               Dawn Williams
             </strong>{" "}
@@ -83,7 +83,7 @@ export default function Directors() {
             Instructor.
           </p>
 
-          <p>
+          <p className="mt-12">
             <strong className="font-semibold text-slate-900">
               Nomvula Moloko
             </strong>{" "}
