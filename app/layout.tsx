@@ -29,7 +29,7 @@ export default function RootLayout({
         <TopBar />
         <Header />
         <main>{children}</main>
-        <Banner />
+        {/* <Banner /> */}
         <Footer />
       </body>
     </html>
