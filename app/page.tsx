@@ -95,54 +95,6 @@ export default function Home() {
           </Card>
         </Cards>
       </Section>
-
-      {/* FOR THE PUBLIC & EMPLOYERS */}
-      <Section soft>
-        <div className="grid items-center gap-10 lg:grid-cols-2">
-          <div>
-            <div className="mb-2 text-xs font-bold uppercase tracking-widest text-brand">
-              For the public &amp; employers
-            </div>
-            <h2 className="text-3xl font-extrabold text-navy">
-              Put public safety first.
-            </h2>
-            <p className="mt-3 text-lg text-slate-600">
-              LPSA&apos;s register is the definitive source for verifying a
-              lifeguard&apos;s professional status.
-            </p>
-            <Link href="/register" className={`${btnDark} mt-5`}>
-              Professional Register
-            </Link>
-          </div>
-
-          {/* Kept a simplified inline list here instead of RowList since we moved links to the navbar */}
-          <div className="rounded-2xl bg-white p-6 shadow-sm border border-slate-200">
-            <h3 className="font-bold text-navy mb-4">Quick Links</h3>
-            <ul className="space-y-3 text-sm font-medium text-slate-600">
-              <li>
-                <Link href="/register" className="hover:text-brand">
-                  Verify a Lifeguard
-                </Link>
-              </li>
-              <li>
-                <Link href="/membership" className="hover:text-brand">
-                  Apply for Registration
-                </Link>
-              </li>
-              <li>
-                <Link href="/resources" className="hover:text-brand">
-                  Documents & Policies
-                </Link>
-              </li>
-              <li>
-                <Link href="/ethics" className="hover:text-brand">
-                  Ethics & Discipline
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </Section>
     </>
   );
 }
