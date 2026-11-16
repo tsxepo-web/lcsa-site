@@ -17,11 +17,11 @@ export default function Header() {
         <Link href="/" className="flex items-center gap-3">
           <div className="relative h-12 w-12 shrink-0">
             <Image
-              src="/images/lpsa-logo.png" // Ensure this matches your actual file path
+              src="/images/lpsa-logo.png"
               alt="Lifeguard Profession of South Africa Logo"
               fill
               className="object-contain"
-              priority // Prevents layout shift on load
+              priority
             />
           </div>
           <span className="leading-tight">
