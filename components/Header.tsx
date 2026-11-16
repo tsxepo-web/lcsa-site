@@ -17,17 +17,48 @@ export default function Header() {
             SA
           </span>
           <span className="leading-tight">
-            <b className="block text-navy">LPSA</b>
+            <b className="block text-navy">LCSA</b>
             <small className="text-xs text-slate-500">
-              Lifeguard Profession · South Africa
+              Lifeguard Council · South Africa
             </small>
           </span>
         </Link>
-
         <nav className="hidden items-center gap-1 xl:flex">
           {nav.map((n) => {
             const active =
               n.href === "/" ? pathname === "/" : pathname.startsWith(n.href);
+            if (n.children) {
+              return (
+                <div key={n.href} className="group relative">
+                  <Link
+                    href={n.href}
+                    className={`flex items-center gap-1 rounded px-3 py-2 text-sm font-medium transition-colors ${
+                      active
+                        ? "text-brand"
+                        : "text-slate-700 hover:text-red-600"
+                    }`}
+                  >
+                    {n.label}
+                    <span className="material-symbols-outlined text-[16px]">
+                      expand_more
+                    </span>
+                  </Link>
+                  <div className="absolute left-0 top-full hidden w-64 pt-2 group-hover:block">
+                    <div className="overflow-hidden rounded-md border border-slate-200 bg-white shadow-lg">
+                      {n.children.map((child) => (
+                        <Link
+                          key={child.href}
+                          href={child.href}
+                          className="block px-4 py-2.5 text-sm text-slate-700 transition-colors hover:bg-slate-50 hover:text-red-600"
+                        >
+                          {child.label}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              );
+            }
             return (
               <Link
                 key={n.href}
@@ -41,14 +72,7 @@ export default function Header() {
             );
           })}
         </nav>
-
         <div className="flex items-center gap-2">
-          <Link
-            href="/register"
-            className="inline-flex items-center justify-center rounded-md bg-navy px-4 py-2 text-center text-sm font-semibold text-white hover:bg-navy/90"
-          >
-            Verify Lifeguard
-          </Link>
           <button
             aria-label="Toggle menu"
             onClick={() => setOpen((o) => !o)}
@@ -58,18 +82,32 @@ export default function Header() {
           </button>
         </div>
       </div>
-
       {open && (
         <nav className="border-t border-line bg-white px-5 py-3 xl:hidden">
           {nav.map((n) => (
-            <Link
-              key={n.href}
-              href={n.href}
-              onClick={() => setOpen(false)}
-              className="block py-2 text-sm font-medium text-slate-700 transition-colors hover:text-red-600"
-            >
-              {n.label}
-            </Link>
+            <div key={n.href}>
+              <Link
+                href={n.href}
+                onClick={() => setOpen(false)}
+                className="block py-2 text-sm font-medium text-slate-700 transition-colors hover:text-red-600"
+              >
+                {n.label}
+              </Link>
+              {n.children && (
+                <div className="ml-4 border-l border-slate-200 pl-4">
+                  {n.children.map((child) => (
+                    <Link
+                      key={child.href}
+                      href={child.href}
+                      onClick={() => setOpen(false)}
+                      className="block py-2 text-sm text-slate-500 transition-colors hover:text-red-600"
+                    >
+                      {child.label}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
           ))}
         </nav>
       )}

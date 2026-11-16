@@ -1,68 +1,74 @@
 import Link from "next/link";
-import {
-  Card,
-  Cards,
-  Section,
-  RowList,
-  btnDark,
-  btnPrimary,
-} from "@/components/ui";
-import { quickLinks } from "@/lib/site";
+import Image from "next/image";
+import { Card, Cards, Section, btnDark } from "@/components/ui";
+
+// Replace these with your actual image paths (e.g., "/images/membership.jpg")
+const heroCards = [
+  {
+    title: "Membership",
+    href: "/membership",
+    img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=600&h=400",
+  },
+  {
+    title: "Upcoming Events",
+    href: "/events",
+    img: "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&q=80&w=600&h=400",
+  },
+  {
+    title: "Masterclasses 2026",
+    href: "/designations/masterclasses",
+    img: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=800&h=600",
+  },
+  {
+    title: "Annual Conference 2026",
+    href: "/events/conference",
+    img: "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&q=80&w=600&h=400",
+  },
+  {
+    title: "Awards 2026",
+    href: "/awards/2026",
+    img: "https://images.unsplash.com/photo-1579621970588-a35d0e7ab9b6?auto=format&fit=crop&q=80&w=600&h=400",
+  },
+  {
+    title: "Subscribe",
+    href: "#subscribe",
+    img: "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&q=80&w=600&h=400",
+  },
+];
 
 export default function Home() {
   return (
     <>
-      <section className="bg-navy text-white">
-        <div className="mx-auto grid max-w-6xl items-center gap-10 px-5 py-20 lg:grid-cols-2">
-          <div>
-            <div className="mb-3 text-xs font-bold uppercase tracking-widest text-red-300">
-              Non-statutory professional body • NPO Act 71 of 1997
-            </div>
-            <h1 className="text-4xl font-extrabold md:text-6xl">
-              Lifeguard Profession of South Africa
-            </h1>
-            <p className="mt-5 max-w-xl text-lg text-slate-300">
-              The national professional register for lifeguards. Established to
-              protect public safety from drowning through professional
-              standards, ethics, scope of practice, accreditation and continuing
-              professional development.
-            </p>
-            <div className="mt-7 flex flex-wrap gap-3">
-              <Link href="/register" className={btnPrimary}>
-                Verify a Lifeguard
-              </Link>
-              <Link
-                href="/membership"
-                className="inline-block rounded-md border border-white bg-navy px-5 py-3 text-sm font-semibold text-white hover:brightness-125"
-              >
-                Apply for Registration
-              </Link>
-            </div>
-          </div>
-          <div className="rounded-2xl bg-white p-7 text-slate-700 shadow-xl">
-            <span className="rounded bg-soft px-2 py-1 text-xs font-bold text-brand">
-              Official Register
-            </span>
-            <h3 className="mt-3 text-xl font-bold text-navy">
-              Verify professional status
-            </h3>
-            <p className="mt-2 text-sm">
-              Check registration, designation, CPD compliance and status through
-              the LPSA professional register.
-            </p>
-            <Link
-              href="/register"
-              className={`${btnDark} mt-4 w-full text-center`}
-            >
-              Go to the register
-            </Link>
-            <p className="mt-3 text-xs text-slate-500">
-              For employers, municipalities and event organisers.
-            </p>
+      {/* NEW HERO GRID SECTION */}
+      <section className="w-full bg-white pb-16 pt-10">
+        <div className="mx-auto max-w-[1100px] px-4 md:px-6">
+          <div className="grid grid-cols-1 gap-x-8 gap-y-12 md:grid-cols-2 lg:grid-cols-3">
+            {heroCards.map((card) => (
+              <div key={card.title} className="group flex flex-col">
+                {/* Image Container with Overlay */}
+                <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-100 shadow-sm border border-slate-200">
+                  <Image
+                    src={card.img}
+                    alt={card.title}
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
+
+                {/* Title Link */}
+                <Link
+                  href={card.href}
+                  className="mt-4 text-center text-[18px] font-bold text-[#8b1c62] underline decoration-2 underline-offset-4 hover:text-[#5f0e40] transition-colors"
+                >
+                  {card.title}
+                </Link>
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
+      {/* WHAT LPSA DOES */}
       <Section>
         <div className="mb-10 max-w-3xl">
           <div className="mb-2 text-xs font-bold uppercase tracking-widest text-brand">
@@ -91,6 +97,7 @@ export default function Home() {
         </Cards>
       </Section>
 
+      {/* FOR THE PUBLIC & EMPLOYERS */}
       <Section soft>
         <div className="grid items-center gap-10 lg:grid-cols-2">
           <div>
@@ -108,7 +115,33 @@ export default function Home() {
               Professional Register
             </Link>
           </div>
-          <RowList items={quickLinks} />
+
+          {/* Kept a simplified inline list here instead of RowList since we moved links to the navbar */}
+          <div className="rounded-2xl bg-white p-6 shadow-sm border border-slate-200">
+            <h3 className="font-bold text-navy mb-4">Quick Links</h3>
+            <ul className="space-y-3 text-sm font-medium text-slate-600">
+              <li>
+                <Link href="/register" className="hover:text-brand">
+                  Verify a Lifeguard
+                </Link>
+              </li>
+              <li>
+                <Link href="/membership" className="hover:text-brand">
+                  Apply for Registration
+                </Link>
+              </li>
+              <li>
+                <Link href="/resources" className="hover:text-brand">
+                  Documents & Policies
+                </Link>
+              </li>
+              <li>
+                <Link href="/ethics" className="hover:text-brand">
+                  Ethics & Discipline
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
       </Section>
     </>

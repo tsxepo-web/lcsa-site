@@ -1,15 +1,65 @@
 export const nav = [
   { href: "/", label: "Home" },
-  { href: "/register", label: "Professional Register" },
-  { href: "/cpd", label: "CPD" },
-  { href: "/accreditation", label: "Accreditation" },
-  { href: "/membership", label: "Membership" },
-  { href: "/ethics", label: "Ethics" },
-  { href: "/resources", label: "Resources" },
-  { href: "/about", label: "About" },
+  {
+    href: "/about",
+    label: "About",
+    children: [
+      { href: "/about", label: "About LPSA" },
+      { href: "/about/vision-mission", label: "Vision and Mission" },
+      { href: "/about/directors", label: "Directors" },
+      { href: "/about/code-of-conduct", label: "Code of Conduct" },
+      { href: "/about/constitution", label: "Constitution" },
+      { href: "/about/saqa-recognition", label: "SAQA Recognition" },
+      { href: "/about/popia", label: "Protection of Personal Information" },
+    ],
+  },
+  {
+    href: "/designations",
+    label: "Designations",
+    children: [
+      { href: "/designations", label: "Professional Designations" },
+      { href: "/cpd", label: "Masterclass 2026" },
+    ],
+  },
+  {
+    href: "/awards",
+    label: "Awards",
+    children: [{ href: "/awards/2026", label: "Awards 2026" }],
+  },
+  {
+    href: "/membership",
+    label: "Membership",
+    children: [
+      { href: "/membership", label: "Who are Our Members" },
+      { href: "/membership/types", label: "Types of Membership" },
+      { href: "/membership/portal", label: "Member Online Learning Portal" },
+      {
+        href: "/membership/critical-skill-letter",
+        label: "Critical Skill Letter",
+      },
+    ],
+  },
+  {
+    href: "/resources",
+    label: "Resources",
+    children: [
+      { href: "/resources", label: "Endorsed training programmes" },
+      {
+        href: "/resources/future-proof",
+        label: "Future Proof your Career 2026",
+      },
+      { href: "/resources/global-skills", label: "Global Skills Matrix" },
+      {
+        href: "/resources/portal-instructions",
+        label: "LPSA Online Portal Instructions",
+      },
+      { href: "/resources/recertification", label: "Recertification Handbook" },
+      { href: "/resources/webinars", label: "Webinar Replays" },
+    ],
+  },
+  { href: "/Member Voices", label: "Member Voices" },
   { href: "/contact", label: "Contact" },
 ];
-
 export const footerGroups = [
   {
     title: "Professionals",
