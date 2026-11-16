@@ -72,29 +72,34 @@ export const nav = [
   { href: "/Member Voices", label: "Member Voices" },
   { href: "/contact", label: "Contact" },
 ];
+
 export const footerGroups = [
   {
-    title: "Professionals",
+    title: "Membership & Designations",
     links: [
-      { href: "/membership", label: "Registration" },
-      { href: "/cpd", label: "CPD Programme" },
-      { href: "/accreditation", label: "Accreditation" },
+      { href: "/membership/types", label: "Types of Members" },
+      { href: "/designations", label: "Professional Designations" },
+      { href: "/designations/masterclasses", label: "Masterclass 2026" },
+      { href: "/membership/portal", label: "Professional Register" },
     ],
   },
   {
-    title: "Public & Employers",
+    title: "Resources & Ethics",
     links: [
-      { href: "/register", label: "Verify a Lifeguard" },
-      { href: "/resources", label: "Resources" },
-      { href: "/ethics", label: "Ethics & Discipline" },
+      { href: "/resources/future-proof", label: "Resources Library" },
+      { href: "/resources/endorsed", label: "Endorsed Training" },
+      { href: "/resources/webinar-replays", label: "Webinar Replays" },
+      { href: "/about/popia", label: "Ethics & Discipline" },
     ],
   },
   {
-    title: "Organisation",
+    title: "About & Contact",
     links: [
       { href: "/about", label: "About LPSA" },
-      { href: "/resources", label: "Governance" },
-      { href: "/contact", label: "Contact" },
+      { href: "/about/directors", label: "Directors" },
+      { href: "/about/vision-mission", label: "Vision & Mission" },
+      { href: "/awards", label: "Awards 2026" },
+      { href: "/contact", label: "Contact Us" },
     ],
   },
 ];
