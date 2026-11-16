@@ -80,7 +80,7 @@ export const footerGroups = [
       { href: "/membership/types", label: "Types of Members" },
       { href: "/designations", label: "Professional Designations" },
       { href: "/designations/masterclasses", label: "Masterclass 2026" },
-      { href: "/membership/portal", label: "Professional Register" },
+      { href: "/membership/portal", label: "Portal" },
     ],
   },
   {
