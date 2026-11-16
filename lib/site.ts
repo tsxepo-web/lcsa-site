@@ -36,10 +36,10 @@ export const nav = [
     children: [{ href: "/awards/2026", label: "Awards 2026" }],
   },
   {
-    href: "/membership",
+    href: "/membership/types",
     label: "Membership",
     children: [
-      { href: "/membership", label: "Who are Our Members" },
+      { href: "/files/ReadMe.pdf", label: "Who are Our Members" },
       { href: "/membership/types", label: "Types of Membership" },
       { href: "/membership/portal", label: "Member Online Learning Portal" },
       {
