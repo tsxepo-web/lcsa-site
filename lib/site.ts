@@ -49,7 +49,7 @@ export const nav = [
     ],
   },
   {
-    href: "/resources",
+    href: "/resources/endorsed",
     label: "Resources",
     children: [
       { href: "/resources/endorsed", label: "Endorsed training programmes" },
