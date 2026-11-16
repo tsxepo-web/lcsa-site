@@ -7,7 +7,11 @@ export const nav = [
       { href: "/about", label: "About LPSA" },
       { href: "/about/vision-mission", label: "Vision and Mission" },
       { href: "/about/directors", label: "Directors" },
-      { href: "/about/code-of-conduct", label: "Code of Conduct" },
+      {
+        href: "/files/lifeguard-manual.pdf",
+        label: "Code of Conduct",
+        isExternal: true,
+      },
       { href: "/about/constitution", label: "Constitution" },
       { href: "/about/saqa-recognition", label: "SAQA Recognition" },
       { href: "/about/popia", label: "Protection of Personal Information" },

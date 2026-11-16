@@ -37,6 +37,7 @@ export default function Header() {
           {nav.map((n) => {
             const active =
               n.href === "/" ? pathname === "/" : pathname.startsWith(n.href);
+
             if (n.children) {
               return (
                 <div key={n.href} className="group relative">
@@ -53,22 +54,31 @@ export default function Header() {
                       expand_more
                     </span>
                   </Link>
+
                   <div className="absolute left-0 top-full hidden w-64 pt-2 group-hover:block">
                     <div className="overflow-hidden rounded-md border border-slate-200 bg-white shadow-lg">
-                      {n.children.map((child) => (
-                        <Link
-                          key={child.href}
-                          href={child.href}
-                          className="block px-4 py-2.5 text-sm text-slate-700 transition-colors hover:bg-slate-50 hover:text-red-600"
-                        >
-                          {child.label}
-                        </Link>
-                      ))}
+                      {n.children.map((child) => {
+                        // Check if the child link is a PDF
+                        const isPdf = child.href.endsWith(".pdf");
+
+                        return (
+                          <Link
+                            key={child.href}
+                            href={child.href}
+                            target={isPdf ? "_blank" : undefined}
+                            rel={isPdf ? "noopener noreferrer" : undefined}
+                            className="block px-4 py-2.5 text-sm text-slate-700 transition-colors hover:bg-slate-50 hover:text-red-600"
+                          >
+                            {child.label}
+                          </Link>
+                        );
+                      })}
                     </div>
                   </div>
                 </div>
               );
             }
+
             return (
               <Link
                 key={n.href}
@@ -107,18 +117,25 @@ export default function Header() {
               >
                 {n.label}
               </Link>
+
               {n.children && (
                 <div className="ml-4 border-l border-slate-200 pl-4">
-                  {n.children.map((child) => (
-                    <Link
-                      key={child.href}
-                      href={child.href}
-                      onClick={() => setOpen(false)}
-                      className="block py-2 text-sm text-slate-500 transition-colors hover:text-red-600"
-                    >
-                      {child.label}
-                    </Link>
-                  ))}
+                  {n.children.map((child) => {
+                    const isPdf = child.href.endsWith(".pdf");
+
+                    return (
+                      <Link
+                        key={child.href}
+                        href={child.href}
+                        target={isPdf ? "_blank" : undefined}
+                        rel={isPdf ? "noopener noreferrer" : undefined}
+                        onClick={() => setOpen(false)}
+                        className="block py-2 text-sm text-slate-500 transition-colors hover:text-red-600"
+                      >
+                        {child.label}
+                      </Link>
+                    );
+                  })}
                 </div>
               )}
             </div>
