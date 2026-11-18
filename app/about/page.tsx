@@ -1,3 +1,4 @@
+import NewsLetterForm from "@/components/NewsletterForm";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -88,17 +89,12 @@ export default function AboutLPSA() {
           {/* Action Buttons */}
           <div className="mt-8 grid gap-4 sm:grid-cols-2">
             <Link
-              href="/membership"
+              href="/membership/types"
               className="flex h-12 items-center justify-center rounded border-2 border-[#8b1c62] text-[13px] font-bold text-[#8b1c62] transition-colors hover:bg-[#8b1c62] hover:text-white"
             >
               Join LPSA
             </Link>
-            <Link
-              href="#subscribe"
-              className="flex h-12 items-center justify-center rounded border-2 border-[#8b1c62] text-[13px] font-bold text-[#8b1c62] transition-colors hover:bg-[#8b1c62] hover:text-white"
-            >
-              Subscribe to monthly newsletter
-            </Link>
+            <NewsLetterForm />
           </div>
 
           {/* Disclaimer */}

@@ -14,6 +14,7 @@ export default defineConfig({
     env: {
       ASSETS: bindings.assets(),
       IMAGES: bindings.images(),
+      RESEND_API_KEY: bindings.secret(),
     },
   }),
 });
