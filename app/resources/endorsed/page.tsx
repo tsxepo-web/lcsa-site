@@ -59,17 +59,17 @@ export default function EndorsedProgrammes() {
               </Link>{" "}
               and return together with requested documentation to{" "}
               <a
-                href="mailto:admin@opsa.org.za"
+                href="mailto:admin@lpsa.org.za"
                 className="text-[#8b1c62] hover:underline"
               >
-                admin@opsa.org.za
+                admin@lpsa.org.za
               </a>
               .
             </p>
           </div>
 
           <p className="mt-8 text-[13px] text-slate-700">
-            The following programmes have been endorsed by OPSA
+            The following programmes have been endorsed by LPSA
           </p>
           <div className="mt-4 border-b border-slate-200" />
         </div>

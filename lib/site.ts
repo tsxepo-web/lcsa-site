@@ -31,11 +31,6 @@ export const nav = [
     ],
   },
   {
-    href: "/awards",
-    label: "Awards",
-    children: [{ href: "/awards/2026", label: "Awards 2026" }],
-  },
-  {
     href: "/membership/types",
     label: "Membership",
     children: [
@@ -48,6 +43,7 @@ export const nav = [
       },
     ],
   },
+  { href: "/continuous-professional-development", label: "CPD" },
   {
     href: "/resources/endorsed",
     label: "Resources",
@@ -69,6 +65,17 @@ export const nav = [
       { href: "/resources/webinar-replays", label: "Webinar Replays" },
     ],
   },
+  {
+    href: "/Events",
+    label: "Events",
+    children: [
+      { href: "/events", label: "Announcements" },
+      { href: "/events/information-sessions", label: "Information Sessions" },
+      { href: "/events/media-statements", label: "Media Statements" },
+      { href: "/events/awards", label: "Awards" },
+      { href: "/events/webinars", label: "Webinars" },
+    ],
+  },
   { href: "/Member Voices", label: "Member Voices" },
   { href: "/contact", label: "Contact" },
 ];
@@ -79,16 +86,12 @@ export const footerGroups = [
     links: [
       { href: "/membership/types", label: "Types of Members" },
       { href: "/designations", label: "Professional Designations" },
-      { href: "/designations/masterclasses", label: "Masterclass 2026" },
-      { href: "/membership/portal", label: "Portal" },
     ],
   },
   {
     title: "Resources & Ethics",
     links: [
       { href: "/resources/future-proof", label: "Resources Library" },
-      { href: "/resources/endorsed", label: "Endorsed Training" },
-      { href: "/resources/webinar-replays", label: "Webinar Replays" },
       { href: "/about/popia", label: "Ethics & Discipline" },
     ],
   },
@@ -97,8 +100,6 @@ export const footerGroups = [
     links: [
       { href: "/about", label: "About LPSA" },
       { href: "/about/directors", label: "Directors" },
-      { href: "/about/vision-mission", label: "Vision & Mission" },
-      { href: "/awards", label: "Awards 2026" },
       { href: "/contact", label: "Contact Us" },
     ],
   },

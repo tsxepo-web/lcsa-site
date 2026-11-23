@@ -5,64 +5,83 @@ export const metadata: Metadata = { title: "Professional Designations" };
 
 const designations = [
   {
-    title: "Certified Office Professional (COP)",
+    title: "PROFESSIONAL LIFEGUARD",
+    abbreviation: "(PL)",
     requirements: [
-      "A SAQA recognised NQF Level 4 Business Administration or Public Administration qualification",
-      "Two to four years practical work experience in administration",
-      "The successful completion of an industry relevant portfolio of evidence to determine the level of your skills",
+      "A matric certificate or a SAQA-recognized NQF Level 4 Business Administration or Public Administration qualification or higher.",
+      "Five to nine years' practical experience in an administrative role.",
+      "The successful completion of an industry-related portfolio of evidence to determine the level of your skills.",
     ],
   },
   {
-    title: "Certified Managerial Office Professional (CMOP)",
+    title: "SENIOR PROFESSIONAL LIFEGUARD",
+    abbreviation: "(SPL)",
     requirements: [
-      "A matric certificate or a SAQA recognised NQF Level 4 Business Administration or Public Administration qualification or higher",
-      "More than four years practical experience in an administrative role",
-      "The successful completion of an industry relevant portfolio of evidence to determine the level of your skills",
+      "A SAQA recognized NQF Level 5 Business Administration or Public Administration qualification or higher.",
+      "Ten or more years' practical experience in an administrative role.",
+      "The successful completion of an industry related portfolio of evidence to determine the level of your skills.",
     ],
   },
   {
-    title: "Certified Office Manager (COM)",
+    title: "LIFEGUARD INSTRUCTOR",
+    abbreviation: "(LI)",
     requirements: [
-      "A SAQA recognised NQF Level 5 Business Administration or Public Administration qualification or higher",
-      "Five or more years practical experience in an administrative role",
-      "The successful completion of an industry relevant portfolio of evidence to determine the level of your skills",
+      "A SAQA recognized NQF Level 5 Business Administration or Public Administration qualification or higher.",
+      "Ten or more years' practical experience in an administrative role.",
+      "The successful completion of an industry related portfolio of evidence to determine the level of your skills.",
+    ],
+  },
+  {
+    title: "LIFEGUARD ASSESSOR",
+    abbreviation: "(LA)",
+    requirements: [
+      "A SAQA recognized NQF Level 5 Business Administration or Public Administration qualification or higher.",
+      "Ten or more years' practical experience in an administrative role.",
+      "The successful completion of an industry related portfolio of evidence to determine the level of your skills.",
+    ],
+  },
+  {
+    title: "LIFEGUARD SUPERVISION",
+    abbreviation: "(LS)",
+    requirements: [
+      "A SAQA recognized NQF Level 5 Business Administration or Public Administration qualification or higher.",
+      "Ten or more years' practical experience in an administrative role.",
+      "The successful completion of an industry related portfolio of evidence to determine the level of your skills.",
     ],
   },
 ];
 
-// 1. ADDED UNIQUE IMAGES TO EACH PATHWAY
-const pathways = [
+// NEW: The 5-step process data
+const processSteps = [
   {
-    title: "GO SOLO!",
-    desc: "Complete the Portfolio of Evidence (PoE) at your own pace from start to finish. You can download the template and submit the PoE for assessment.",
-    price: "R2400",
-    color: "bg-[#6b6b6b]", // Grey
-    btnText: "Download PoE Template",
-    img: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=400&h=300", // Solo working
+    abbr: "PL",
+    color: "bg-[#5fa82d]", // Green
+    bgLight: "bg-[#f4ece9]", // Light Pink/Beige
+    text: "Complete the Portfolio of Evidence (PoE) at your own pace and in your own time. You have three (3) months in which to complete and return the PoE for assessment.",
   },
   {
-    title: "ONLINE MASTERCLASS",
-    desc: "Complete an online masterclass programme – update your skills and complete your Portfolio of Evidence (PoE) during the programme. A blend of blended learning.",
-    price: "R4800",
-    color: "bg-[#b3205e]", // Magenta
-    btnText: "Download PoE Template",
-    img: "https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?auto=format&fit=crop&q=80&w=400&h=300", // Online learning
+    abbr: "SPL",
+    color: "bg-[#5b9bd5]", // Blue
+    bgLight: "bg-[#f8f6e7]", // Light Yellow/Cream
+    text: "", // Empty in screenshot
   },
   {
-    title: "PUBLIC MASTERCLASS",
-    desc: "Attend a 5-Day Masterclass, update your skills and complete your Portfolio of Evidence (PoE) during the Masterclass.",
-    price: "R11750",
-    color: "bg-[#8b1c62]", // Darker Magenta
-    btnText: "Download PoE Template",
-    img: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&q=80&w=400&h=300", // Public speaking/class
+    abbr: "LI",
+    color: "bg-[#ffc000]", // Yellow/Orange
+    bgLight: "bg-[#e2f0d9]", // Light Green
+    text: "Attend a 5-day Masterclass – update your skills and complete your Portfolio of Evidence (PoE) during the Masterclass.",
   },
   {
-    title: "IN-HOUSE MASTERCLASS",
-    desc: "Offered in-house or in the workplace directly at your organisation. Update your skills and complete your Portfolio of Evidence (PoE) during the Masterclass. Open for team building (maximum 10 delegates).",
-    price: "Enquire",
-    color: "bg-[#b93e76]", // Lighter Magenta
-    btnText: "Request a Quote",
-    img: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=400&h=300", // Team working
+    abbr: "LA",
+    color: "bg-[#a5a5a5]", // Grey
+    bgLight: "bg-[#ddebf7]", // Light Blue
+    text: "Attend a 5-day Masterclass – update your skills and complete your Portfolio of Evidence (PoE) during the Masterclass.",
+  },
+  {
+    abbr: "LS",
+    color: "bg-[#ed7d31]", // Orange
+    bgLight: "bg-[#b4c6e7]", // Darker Blue
+    text: "Organise an in-house Masterclass to professionalise the administrative body at your organisation. Update your team's skills and complete the Portfolio of Evidence (PoE) during the Masterclass. Great for team building! (Minimum 10 delegates.)",
   },
 ];
 
@@ -73,7 +92,6 @@ export default function ProfessionalDesignations() {
       <section className="w-full bg-slate-100">
         <div className="mx-auto max-w-[1280px]">
           <div className="relative aspect-[21/9] w-full overflow-hidden md:aspect-[3/1]">
-            {/* 2. RELIABLE HERO IMAGE */}
             <Image
               src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=1200&h=400"
               alt="Professional Designations"
@@ -94,35 +112,40 @@ export default function ProfessionalDesignations() {
             certain job or task. It is an official endorsement from a
             professional body of your skills and experience.
           </p>
-          <h2 className="mt-8 text-2xl font-extrabold text-[#8b1c62]">
-            OPSA offers three SAQA Registered Professional Designations
+          <h2 className="mt-8 text-2xl font-extrabold uppercase text-[#8b1c62]">
+            LPSA OFFERS FIVE SAQA-REGISTERED PROFESSIONAL DESIGNATIONS
           </h2>
         </div>
       </section>
 
       {/* Designations Grid */}
       <section className="bg-white pb-16">
-        <div className="mx-auto max-w-6xl px-4 md:px-6">
+        <div className="mx-auto max-w-7xl px-4 md:px-6">
           <div className="mb-8 text-center">
             <h3 className="text-sm font-bold text-slate-800">
               Minimum qualification and experience requirements:
             </h3>
             <p className="mt-1 text-[13px] text-red-700">
               <strong>Note:</strong> If you do not have the qualifications
-              required and have attended training during your years as an
-              administrative professional, we do{" "}
-              <strong>Recognise Prior Learning (RPL)</strong>.
+              required and have attended training during your years as a
+              Lifeguard, we do <strong>Recognise Prior Learning (RPL)</strong>.
             </p>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-3">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-5">
             {designations.map((d, i) => (
               <div key={i} className="flex flex-col">
-                <div className="bg-[#b93e76] px-4 py-3 text-center text-sm font-bold text-white">
-                  {d.title}
+                <div className="flex h-24 flex-col items-center justify-center border border-b-0 border-slate-200 bg-navy px-3 py-6 text-center">
+                  <h4 className="text-[12px] font-bold uppercase tracking-wide text-white">
+                    {d.title}
+                  </h4>
+                  <span className="mt-1 text-[12px] text-white">
+                    {d.abbreviation}
+                  </span>
                 </div>
-                <div className="flex-1 border border-t-0 border-slate-200 bg-[#f8f8f8] p-6">
-                  <ul className="list-disc space-y-3 pl-4 text-[13px] leading-relaxed text-slate-700 marker:text-[#8b1c62]">
+
+                <div className="flex-1 border border-slate-200 bg-white p-5">
+                  <ul className="list-disc space-y-4 pl-4 text-[12px] leading-relaxed text-slate-700 marker:text-[#0A1931]">
                     {d.requirements.map((req, j) => (
                       <li key={j}>{req}</li>
                     ))}
@@ -132,20 +155,40 @@ export default function ProfessionalDesignations() {
             ))}
           </div>
 
-          <div className="mt-8 text-center text-[12px] leading-relaxed text-slate-600">
-            <p>
-              OPSA professional designations are valid for 2 years. Twenty (20)
-              CPD points must be earned in the 2-year period to show commitment
-              to ongoing learning and keeping up to date with the skills and
-              knowledge required in the workplace.
-            </p>
-            <p className="mt-2">
-              (Professional designations give employers an indication of the
-              levels of competence of the members who qualify for them.
-              Designations are assessed based on an assessment against a set of
-              outcomes. OPSA Professional Designations are nationally and
-              internationally benchmarked).
-            </p>
+          <div className="mx-auto mt-12 max-w-4xl space-y-6">
+            {/* Validity & CPD Requirement - Highlighted Box */}
+            <div className="flex flex-col items-center justify-center rounded-lg border border-[#0A1931]/10 bg-slate-50 p-6 text-center sm:flex-row sm:text-left sm:gap-4">
+              <span className="material-symbols-outlined text-3xl text-[#8b1c62]">
+                verified
+              </span>
+              <div>
+                <h4 className="text-sm font-bold text-[#0A1931]">
+                  Validity & Continued Professional Development (CPD)
+                </h4>
+                <p className="mt-1 text-[13px] leading-relaxed text-slate-700">
+                  LPSA professional designations are valid for{" "}
+                  <strong>2 years</strong>. To maintain your designation, you
+                  must earn <strong>20 CPD points</strong> within the 2-year
+                  period to show your commitment to ongoing learning and keeping
+                  up to date with industry skills.
+                </p>
+              </div>
+            </div>
+
+            {/* Benchmarking Explanation */}
+            <div className="text-center text-[13px] leading-relaxed text-slate-600">
+              <p>
+                Professional designations give employers an indication of the
+                levels of competence of the members who qualify for them.
+                Designations are awarded based on an assessment against a set of
+                outcomes.
+                <br className="hidden sm:block" />
+                <strong className="mt-2 inline-block text-slate-800">
+                  LPSA Professional Designations are nationally and
+                  internationally benchmarked.
+                </strong>
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -159,9 +202,9 @@ export default function ProfessionalDesignations() {
         </div>
       </section>
 
-      {/* Pathway Section */}
+      {/* NEW: The 5-Step Process Section */}
       <section className="bg-[#f4f4f4] py-16">
-        <div className="mx-auto max-w-[1000px] px-4 md:px-6">
+        <div className="mx-auto max-w-[1100px] px-4 md:px-6">
           <div className="text-center">
             <h2 className="text-xl font-bold text-[#8b1c62]">
               How do I get a professional designation?
@@ -173,49 +216,33 @@ export default function ProfessionalDesignations() {
             <p className="mt-1 text-[13px] text-slate-700">
               A payment plan can be negotiated - email{" "}
               <a
-                href="mailto:downrys@opsa.org.za"
+                href="mailto:cpd@lpsa.org.za"
                 className="text-[#8b1c62] hover:underline"
               >
-                downrys@opsa.org.za
+                cpd@lpsa.org.za
               </a>
             </p>
           </div>
 
-          <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {pathways.map((p, i) => (
-              <div key={i} className="flex flex-col">
-                {/* Top Color Block */}
+          {/* Process Grid */}
+          <div className="mt-12 flex flex-col gap-4 md:flex-row md:gap-2">
+            {processSteps.map((step, i) => (
+              <div
+                key={i}
+                className={`flex flex-1 flex-col shadow-sm border border-slate-200/50 ${step.bgLight}`}
+              >
+                {/* Colored Header */}
                 <div
-                  className={`${p.color} flex flex-1 flex-col p-5 text-white`}
+                  className={`${step.color} flex items-center justify-center py-4 text-white`}
                 >
-                  <h4 className="text-center text-[13px] font-bold uppercase tracking-wide">
-                    {p.title}
-                  </h4>
-                  <p className="mt-4 text-[12px] leading-relaxed opacity-90">
-                    {p.desc}
+                  <h4 className="text-xl font-bold">{step.abbr}</h4>
+                </div>
+
+                {/* Content Box */}
+                <div className="flex-1 p-5">
+                  <p className="text-[13px] leading-relaxed text-slate-800">
+                    {step.text}
                   </p>
-                </div>
-
-                {/* Price Block */}
-                <div className="bg-white px-4 py-6 text-center text-2xl font-bold text-[#8b1c62]">
-                  {p.price}
-                </div>
-
-                {/* Image Block */}
-                <div className="relative aspect-[4/3] w-full bg-slate-200">
-                  <Image
-                    src={p.img}
-                    alt={p.title}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-
-                {/* Button Block */}
-                <div className="bg-[#e5e5e5] p-3 text-center">
-                  <button className="w-full rounded bg-[#8b1c62] py-2 text-[11px] font-bold text-white hover:bg-[#6d134c]">
-                    {p.btnText}
-                  </button>
                 </div>
               </div>
             ))}

@@ -1,11 +1,12 @@
 "use client";
 
 import { useState } from "react";
+import type { FormEvent } from "react";
 
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
     // Here you would typically send the data to your API or email service
     setSubmitted(true);
@@ -17,11 +18,11 @@ export default function ContactPage() {
         <div className="grid gap-16 md:grid-cols-2">
           {/* Left Column: Form */}
           <div>
-            <h1 className="text-3xl font-bold tracking-tight text-[#0A1931] md:text-4xl">
-              SEND US A MESSAGE
+            <h1 className="text-3xl font-bold tracking-tight text-[#0A1931] md:text-4xl uppercase">
+              Send us a message
             </h1>
             <p className="mt-4 text-lg text-slate-700">
-              We promise to respond within 24 hours
+              We promise to respond within 24 hours.
             </p>
 
             {submitted ? (
@@ -148,50 +149,59 @@ export default function ContactPage() {
           </div>
 
           {/* Right Column: Contact Info */}
-          <div className="flex flex-col items-center pt-2 text-center md:pt-0">
-            <h2 className="text-3xl font-bold tracking-tight text-[#0A1931] md:text-4xl">
-              CALL OR WHATSAPP
+          <div className="flex flex-col items-center pt-2 text-center md:items-start md:pt-0 md:text-left">
+            <h2 className="text-3xl font-bold tracking-tight text-[#0A1931] md:text-4xl uppercase">
+              Call or WhatsApp
             </h2>
 
             <a
-              href="tel:+27645187993"
+              href="tel:+27828879486"
               className="mt-6 text-2xl font-bold text-[#0A1931] hover:text-[#8b1c62] hover:underline"
             >
-              +27 64 518 7993
+              +27 82 887 9486
             </a>
 
             <div className="mt-12 w-full max-w-sm">
-              <h3 className="text-lg font-bold text-slate-800">
-                Want to contact someone in the LPSA Office Directly?
+              <h3 className="text-lg font-bold text-slate-800 uppercase">
+                Direct Contact
               </h3>
 
-              <div className="mt-8 space-y-3 text-[15px] text-slate-700">
-                <p>
-                  LPSA Administration Office:{" "}
+              <div className="mt-6 space-y-6 text-[15px] text-slate-700">
+                <div>
+                  <p className="font-semibold text-slate-900">For enquiries:</p>
                   <a
-                    href="mailto:admin@lifeguardcouncil.org.za"
-                    className="text-[#8b1c62] hover:underline"
-                  >
-                    admin@lifeguardcouncil.org.za
-                  </a>
-                </p>
-                <p>
-                  Dawn Williams – LPSA CEO:{" "}
-                  <a
-                    href="mailto:dawn@lifeguardcouncil.org.za"
-                    className="text-[#8b1c62] hover:underline"
-                  >
-                    dawn@lifeguardcouncil.org.za
-                  </a>
-                </p>
-                <div className="pt-2">
-                  <p>For information regarding LPSA Events:</p>
-                  <a
-                    href="mailto:events@lifeguardcouncil.org.za"
+                    href="mailto:info@lpsa.org.za"
                     className="mt-1 inline-block text-[#8b1c62] hover:underline"
                   >
-                    events@lifeguardcouncil.org.za
+                    info@lpsa.org.za
                   </a>
+                </div>
+
+                <div>
+                  <p className="font-semibold text-slate-900">Complaints:</p>
+                  <a
+                    href="mailto:complaint@lpsa.org.za"
+                    className="mt-1 inline-block text-[#8b1c62] hover:underline"
+                  >
+                    complaint@lpsa.org.za
+                  </a>
+                </div>
+
+                <div className="pt-4 border-t border-slate-200">
+                  <p className="font-semibold text-slate-900 uppercase">
+                    Physical Address:
+                  </p>
+                  <p className="mt-2 leading-relaxed text-slate-600">
+                    Lifeguard Profession South Africa
+                    <br />
+                    Spaces Atrium on 5th
+                    <br />
+                    5th Street, Sandhurst
+                    <br />
+                    Sandton, RSA
+                    <br />
+                    Gauteng, 2191
+                  </p>
                 </div>
               </div>
             </div>

@@ -31,9 +31,8 @@ export default function VisionAndMission() {
             <div>
               <h2 className="text-xl font-bold text-[#8b1c62]">Our Vision</h2>
               <p className="mt-4 text-[14px] leading-relaxed text-slate-700">
-                To be the leading professional association in developing ethical
-                standards of practice and excellence for lifeguards and water
-                safety professionals in Africa.
+                A South Africa free from preventable drowning through
+                professional, ethical and competent lifeguarding.
               </p>
             </div>
 
@@ -44,29 +43,31 @@ export default function VisionAndMission() {
               </h2>
               <ul className="mt-4 space-y-4 text-[14px] leading-relaxed text-slate-700">
                 <li>
-                  <strong className="text-slate-900">Diversity:</strong>{" "}
-                  respecting the dignity and value of all individuals.
+                  <strong className="text-slate-900">
+                    We put safety first:
+                  </strong>{" "}
+                  Prioritizing preventing drowning fatalities and other injuries
+                  and protecting health and well-being at work and at home.
                 </li>
                 <li>
-                  <strong className="text-slate-900">Integrity:</strong>{" "}
-                  demonstrating actions that are honest, loyal and ethical
-                  aligned to our vision and mission.
+                  <strong className="text-slate-900">
+                    We act with honesty and integrity:
+                  </strong>{" "}
+                  Acting honestly, fairly, ethically, and transparently
                 </li>
                 <li>
-                  <strong className="text-slate-900">Transparency:</strong>{" "}
-                  conducting business in an open and accountable manner to the
-                  benefit of our members and partners.
+                  <strong className="text-slate-900">
+                    We are accountable:
+                  </strong>{" "}
+                  Owning decisions, actions, and performance while learning from
+                  experiences
                 </li>
                 <li>
-                  <strong className="text-slate-900">Excellence:</strong> being
-                  the go-to place for relevant resources and expertise for
-                  individuals and organisations to ensure growth and
-                  development.
-                </li>
-                <li>
-                  <strong className="text-slate-900">Creativity:</strong>{" "}
-                  passionately pursuing innovative approaches which enhance
-                  service standards.
+                  <strong className="text-slate-900">
+                    Transformation and inclusivity:
+                  </strong>{" "}
+                  Working with colleagues and stakeholders toward shared goals
+                  and strong outcomes.
                 </li>
               </ul>
             </div>
@@ -76,35 +77,10 @@ export default function VisionAndMission() {
           <div>
             <h2 className="text-xl font-bold text-[#8b1c62]">Our Mission</h2>
             <p className="mt-4 text-[14px] leading-relaxed text-slate-700">
-              To ensure and promote quality assurance in the lifeguarding
-              profession through:
+              To regulate, professionalise and advance the lifeguarding and
+              lifesaving industry through standard-setting, registration,
+              education, accreditation and enforcement of ethics.
             </p>
-            <ul className="mt-4 list-disc space-y-3 pl-5 text-[14px] leading-relaxed text-slate-700 marker:text-slate-400">
-              <li>
-                Developing ethical standards of practice aligned to relevant
-                global best practices.
-              </li>
-              <li>
-                Providing suitable and applicable standards that will enhance
-                service excellence in the lifeguarding profession.
-              </li>
-              <li>
-                Advising and supporting organizations about matters relating to
-                the lifeguarding profession.
-              </li>
-              <li>
-                Supporting and encouraging members in continuous professional
-                and career path development.
-              </li>
-              <li>
-                Promoting innovative systems and technological advancements that
-                enhance public safety.
-              </li>
-              <li>
-                Recognising excellence within the lifeguarding profession and
-                creating meaningful platforms for networking.
-              </li>
-            </ul>
           </div>
         </div>
       </div>
